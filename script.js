@@ -105,7 +105,7 @@ function getDetalles(value) {
     $(".modal:hidden").remove();
     $.ajax({
         method: "get",
-        url: "http://www.omdbapi.com/?i=" + value.imdbID + "&apikey=dc81505b",
+        url: "https://www.omdbapi.com/?i=" + value.imdbID + "&apikey=dc81505b",
         success: function (response) {
             //crea los detalles que apareceran en el modal
             crearDetalle(response);
