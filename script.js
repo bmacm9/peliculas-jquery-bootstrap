@@ -67,7 +67,6 @@ function scrollInfinito(page, sePuede) {
                     success: function (response) {
                         $.each(response.Search, function (index, value) {
                             crearMain(value);
-                            console.log(value);
                         })
                     },
 
