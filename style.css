@@ -1,0 +1,11 @@
+.imagen{
+    min-height: 450px;
+}
+
+body{
+    background-color: bisque;
+}
+
+.cargando{
+    margin-bottom: 5rem;
+}
