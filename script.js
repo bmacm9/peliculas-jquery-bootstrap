@@ -20,7 +20,7 @@ function DarEventoBoton() {
         $(".listado").html("");
         $.ajax({
             method: "get",
-            url: "http://www.omdbapi.com/?s=" + $(".texto").val() + "&apikey=dc81505b",
+            url: "https://www.omdbapi.com/?s=" + $(".texto").val() + "&apikey=dc81505b",
             success: function (response) {
                 $.each(response.Search, function (index, value) {
                     crearMain(value);
@@ -33,7 +33,7 @@ function DarEventoBoton() {
             $(".listado").html("");
             $.ajax({
                 method: "get",
-                url: "http://www.omdbapi.com/?s=" + $(".texto").val() + "&apikey=dc81505b",
+                url: "https://www.omdbapi.com/?s=" + $(".texto").val() + "&apikey=dc81505b",
                 success: function (response) {
                     $.each(response.Search, function (index, value) {
                         crearMain(value);
@@ -63,7 +63,7 @@ function scrollInfinito(page, sePuede) {
                             }
                         }
                     },
-                    url: "http://www.omdbapi.com/?s=" + $(".texto").val() + "&apikey=dc81505b&page=" + page,
+                    url: "https://www.omdbapi.com/?s=" + $(".texto").val() + "&apikey=dc81505b&page=" + page,
                     success: function (response) {
                         $.each(response.Search, function (index, value) {
                             crearMain(value);
